@@ -1,1 +1,242 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise 7: Typography</title>
+    
+    <!-- Julian Jiang, Nov 4, 2026 -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Margarine&display=swap" rel="stylesheet">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      
+      html {
+        background-color: #430a21;
+        font-size: 16px;
+      }
+      
+      h1 { 
+        font-family: "Margarine", serif;
+        font-weight: 400;
+        font-size: 2.4em; 
+        letter-spacing: 0.15em;
+      }
+      
+      h2, h3 {
+        font-family: "Balsamiq Sans", sans-serif;
+        font-style: normal;
+      }
+
+      h2 {
+        color: #093e2e;
+        font-weight: 400;
+        font-size: 1.9em; 
+        line-height: 1.1em;
+      }
+      
+      h3 {
+        color: #093e2e;
+        font-weight: 400;
+        font-size: 1.35em; 
+        line-height: 0.75em;
+      }
+      
+      ul, p {
+        font-size: 1em;
+        line-height: 1.2em;
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      #main {
+        border: 0.4em solid #30031f;
+        
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 35% auto;
+        
+        width: 1200px;
+        
+        height: fit-content;
+        min-height: 100vh;
+        
+        padding: 1em;
+        
+        background-color: #63172a;
+      }
+      
+      #left {
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 1em;
+      }
+      
+      #right {
+        background-color: white;
+        padding: 1em;
+        border: 0.4em outset #eceff4;
+        
+        #food-image img {
+          border: 0.2em solid #eceff4;
+          width: 100%;
+        }
+      }
+      
+      #recipe-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        h1, h3 {
+          color: #eceff4;
+          height: fit-content;
+        }
+        h3 {
+          margin: 0.5em;
+        }
+        h1 {
+          margin-bottom: 0.5em;
+          padding-bottom: 0.15em;
+          
+          border-bottom: 8px double #30031f;
+        }
+        padding-bottom: 1em;
+      }
+      
+      #ingredients {
+        align-content: center;
+        padding: 0.6em;
+        padding-top: 0.2em;
+        border: 0.4em outset #eceff4;
+        background-color: white;
+        height: fit-content;
+        
+        h2 {
+          justify-self: center;
+          font-style: italic;
+          margin: 0.5em;
+        }
+        ul {
+          line-height: 2.4em;
+          list-style-position: inside;
+          margin: 0;
+          padding: 0;
+        }
+      
+        li {
+          margin: 0.2em;
+          
+          padding: 1em;
+          padding-top: 0;
+          padding-bottom: 0;
+        
+          strong {
+            color: #13634b;
+          }
+        }
+        
+        li:nth-child(odd) {
+          background-color: #eceff4;
+        }
+      }
+      
+      #preparation {
+        padding: 0.3em;
+        padding-top: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+        
+        gap: 1em;
+        
+        h3 {
+          margin-top: 0.5em;
+        }
+      }
+      
+      #tip {
+        display: grid;
+        grid-template-columns: 10% auto;
+        background-color: #eceff4;
+        
+        padding: 1em;
+        
+        h3, p {
+          color: black;
+          justify-self: center;
+        }
+        p {
+          border-left: 0.3em solid white;
+          padding: 1em;
+          padding-bottom: 0;
+          padding-top: 0;
+        }
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <div id="main">
+      <div id="left">  
+      
+        <div id="recipe-name">
+<h1>Spinach, Tofu and Sesame Stir-Fry</h1>
+
+<h3>By: Martha Rose Shulman</h3>
+
+<h3>Yield: 3 Servings</h3>
+        </div>
+
+        <div id="ingredients">  
+<h2>Ingredients</h2>
+<ul>   
+<li><strong>1 tablespoon</strong> canola oil</li>
+<li><strong>½ pound</strong> tofu, cut in small dice</li>
+<li><strong>1 large</strong> garlic clove, minced</li>
+<li><strong>1 teaspoon</strong> grated or minced fresh ginger</li>
+<li><strong>¼ teaspoon</strong> red chili flakes</li>
+<li>Soy sauce to taste</li>
+<li><strong>16-ounce</strong> bag baby spinach, rinsed</li>
+<li><strong>2 tablespoons</strong> toasted sesame seeds</li>
+<li><strong>1 teaspoon</strong> sesame oil</li>
+</ul>
+        </div>
+      </div> 
+      <div id="right">
+        <div id="food-image">
+          <img src="recipe-photo-Enhanced-SR.jpg" alt="Photo of Spinach, Tofu and Sesame Stir-Fry by Martha Rose Shulman">
+        </div>
+        
+        <div id="preparation">
+<h2>Preparation</h2>
+
+<h3>Step 1</h3>
+<p>       
+Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.
+</p>
+<h3>Step 2</h3>
+<p>
+Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.
+</p>
+          <div id="tip">
+<h3>Tip</h3>
+<p>
+Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
